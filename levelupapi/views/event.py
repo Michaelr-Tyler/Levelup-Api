@@ -25,8 +25,8 @@ class Events(ViewSet):
         event = Event()
         event.time = request.data["time"]
         event.day = request.data["day"]
-        event.description = request.data["description"]
-        event.organizer = gamer
+        event.location = request.data["location"]
+        event.gamer = gamer
 
         game = Game.objects.get(pk=request.data["gameId"])
         event.game = game
