@@ -1,0 +1,33 @@
+[
+    {
+        "model": "levelupapi.event",
+        "pk":1,
+        "fields": {
+            "day": "2020-12-12",
+            "time":"17:00",
+            "location": "NSS Parking Lot",
+            "game": 1,
+            "gamer": 1
+        }
+    }, {
+        "model": "levelupapi.event",
+        "pk":2,
+        "fields": {
+            "day": "2020-12-24",
+            "time":"14:00",
+            "location": "Shelby Park",
+            "game": 4,
+            "gamer": 2
+        }
+    }, {
+        "model": "levelupapi.event",
+        "pk":3,
+        "fields": {
+            "day": "2020-06-12",
+            "time":"15:00",
+            "location": "Union Square",
+            "game": 3,
+            "gamer": 1
+        }
+    }
+]
