@@ -9,3 +9,14 @@ class Event(models.Model):
     location = models.CharField(max_length=75)
     game = models.ForeignKey("Game", on_delete=models.CASCADE)
     
+    @property
+    def joined(self):
+        """joined property, which will be calculated per user
+        Returns:
+            boolean -- If the user has joined the event or not
+        """
+        return self.__joined
+
+    @joined.setter
+    def joined(self, value):
+        self.__joined = value
