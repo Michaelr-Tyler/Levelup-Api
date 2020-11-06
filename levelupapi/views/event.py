@@ -23,7 +23,7 @@ class EventGamerSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Gamer
-        fields = ['user']
+        fields = ['user', 'full_name']
 
 class GameSerializer(serializers.HyperlinkedModelSerializer):
     """JSON serializer for games"""
